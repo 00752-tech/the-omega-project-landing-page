@@ -2,10 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ClickTracker } from "@/components/click-tracker"
-import { AffiliateBanner } from "@/components/affiliate-banner"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { Suspense } from "react"
-import { SEOStructuredData } from "@/components/seo-structured-data"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -38,10 +36,17 @@ export default function RootLayout({
         <meta name="msvalidate.01" content="0D933C8A8D6D92AC7CECDB6E21259A4F" />
       </head>
       <body className={inter.className}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-COSyDcdqHVrYE340jyw93TmCKl3ULI"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            `,
+          }}
+        />
         <Suspense fallback={<div>Loading...</div>}>
           <GoogleAnalytics />
-          <SEOStructuredData />
-          <AffiliateBanner />
           {children}
           <ClickTracker />
         </Suspense>

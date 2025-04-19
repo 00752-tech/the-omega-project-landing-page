@@ -5,6 +5,7 @@ export function SEOStructuredData() {
     name: "The Omega Project",
     description:
       "An online income system featuring Vulcan™ technology and ShopX Launchpad for building automated ecommerce businesses.",
+    image: "https://theomegaproject.cc/confident-executive.png",
     review: {
       "@type": "Review",
       reviewRating: {
@@ -23,7 +24,42 @@ export function SEOStructuredData() {
       "@type": "Offer",
       url: "https://theomegaproject.cc/go",
       priceCurrency: "USD",
+      price: "997.00",
       availability: "https://schema.org/InStock",
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "USD",
+        },
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "US",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "0",
+            unitCode: "HUR",
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: "0",
+            maxValue: "0",
+            unitCode: "HUR",
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 30,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
+      },
     },
   }
 
