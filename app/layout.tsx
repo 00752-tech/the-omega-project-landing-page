@@ -2,8 +2,10 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import { ClickTracker } from "@/components/click-tracker"
+import { AffiliateBanner } from "@/components/affiliate-banner"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { Suspense } from "react"
+import { SearchForm } from "@/components/search-form"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -47,6 +49,10 @@ export default function RootLayout({
         />
         <Suspense fallback={<div>Loading...</div>}>
           <GoogleAnalytics />
+          <AffiliateBanner />
+          <div className="flex justify-end max-w-6xl mx-auto py-2 px-4">
+            <SearchForm />
+          </div>
           {children}
           <ClickTracker />
         </Suspense>

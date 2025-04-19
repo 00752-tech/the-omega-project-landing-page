@@ -10,7 +10,7 @@ export function CoreStepsSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Step 1 */}
-          <div className="border rounded-lg p-6 flex flex-col items-start">
+          <div id="step1" className="border rounded-lg p-6 flex flex-col items-start">
             <div className="bg-blue-100 p-3 rounded-lg mb-4">
               <Store className="h-8 w-8 text-blue-600" />
             </div>
@@ -19,7 +19,7 @@ export function CoreStepsSection() {
           </div>
 
           {/* Step 2 */}
-          <div className="border rounded-lg p-6 flex flex-col items-start">
+          <div id="step2" className="border rounded-lg p-6 flex flex-col items-start">
             <div className="bg-blue-100 p-3 rounded-lg mb-4">
               <TrendingUp className="h-8 w-8 text-blue-600" />
             </div>
@@ -28,7 +28,7 @@ export function CoreStepsSection() {
           </div>
 
           {/* Step 3 */}
-          <div className="border rounded-lg p-6 flex flex-col items-start">
+          <div id="step3" className="border rounded-lg p-6 flex flex-col items-start">
             <div className="bg-blue-100 p-3 rounded-lg mb-4">
               <Users className="h-8 w-8 text-blue-600" />
             </div>
@@ -37,7 +37,7 @@ export function CoreStepsSection() {
           </div>
 
           {/* Step 4 */}
-          <div className="border rounded-lg p-6 flex flex-col items-start">
+          <div id="step4" className="border rounded-lg p-6 flex flex-col items-start">
             <div className="bg-blue-100 p-3 rounded-lg mb-4">
               <DollarSign className="h-8 w-8 text-blue-600" />
             </div>

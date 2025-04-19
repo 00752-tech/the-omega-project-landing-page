@@ -17,6 +17,9 @@ export function Footer() {
             <Link href="/support" className="text-sm text-gray-500 hover:text-gray-700">
               Support
             </Link>
+            <Link href="/video-review" className="text-sm text-gray-500 hover:text-gray-700">
+              Video Review
+            </Link>
           </div>
 
           <div className="mt-6 max-w-4xl mx-auto">

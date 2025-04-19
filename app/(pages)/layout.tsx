@@ -2,6 +2,7 @@ import type React from "react"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Footer } from "@/components/footer"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export default function PagesLayout({
   children,
@@ -18,6 +19,7 @@ export default function PagesLayout({
           </Link>
         </div>
       </header>
+      <Breadcrumbs />
       <main className="flex-grow">{children}</main>
       <Footer />
     </div>
