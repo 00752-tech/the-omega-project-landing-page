@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function VideoReviewPage() {
   return (
     <div>
+      <h1 className="sr-only">The Omega Project Video Review: $1,654/Day Online Income System</h1>
       <VideoReviewSection />
     </div>
   )

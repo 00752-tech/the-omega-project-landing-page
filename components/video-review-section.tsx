@@ -1,15 +1,22 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export function VideoReviewSection() {
+  const pathname = usePathname()
+  const isVideoReviewPage = pathname === "/video-review"
+
+  // Use H1 only when this component is embedded in another page (not on the dedicated video review page)
+  const HeadingTag = isVideoReviewPage ? "h2" : "h2"
+
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <HeadingTag className="text-4xl md:text-5xl font-bold mb-4">
             The Omega Project Review: <span className="text-blue-600">$1,654/Day Online Income System</span>
-          </h2>
+          </HeadingTag>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto">
             Watch this in-depth review of Aiden Booth's revolutionary Omega Project system that's helping everyday
             people generate consistent online income with Vulcan™ technology and ShopX Launchpad
