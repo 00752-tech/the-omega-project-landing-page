@@ -1,0 +1,12 @@
+# Robots.txt file for theomegaproject.cc
+User-agent: *
+Allow: /
+Disallow: /go
+Disallow: /api/redirect
+
+# Prevent indexing of tracking parameters
+Disallow: /*?source=*
+Disallow: /*&source=*
+
+# Sitemap location
+Sitemap: https://theomegaproject.cc/sitemap.xml
