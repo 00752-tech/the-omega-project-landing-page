@@ -1,10 +1,11 @@
 import { VideoReviewSection } from "@/components/video-review-section"
 import type { Metadata } from "next"
 
+// Update the metadata to optimize title length while maintaining keywords
 export const metadata: Metadata = {
-  title: "The Omega Project Video Review | $1,654/Day Online Income System",
+  title: "Omega Project Video Review | $1,654/Day System [2025]",
   description:
-    "Watch our in-depth video review of The Omega Project by Aiden Booth. Learn how this revolutionary system helps generate $1,654/day with Vulcan™ technology.",
+    "Watch our in-depth video review of The Omega Project. Learn how this system helps generate $1,654/day with Vulcan™ technology.",
   keywords:
     "Omega Project video review, Aiden Booth, online income system, Vulcan technology, ShopX Launchpad, make money online 2025",
 }
