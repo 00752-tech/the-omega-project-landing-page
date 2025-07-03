@@ -5,7 +5,7 @@ export function SEOStructuredData() {
     name: "The Omega Project",
     description:
       "An online income system featuring Vulcan™ technology and ShopX Launchpad for building automated ecommerce businesses.",
-    image: "https://theomegaproject.cc/confident-executive.png",
+    image: "https://theomegaproject.cc/public/guy in blue henley for omega project site.png",
     review: {
       "@type": "Review",
       reviewRating: {
