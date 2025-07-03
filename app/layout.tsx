@@ -6,6 +6,7 @@ import { AffiliateBanner } from "@/components/affiliate-banner"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { Suspense } from "react"
 import { SearchForm } from "@/components/search-form"
+import Script from "next/script" // Import Script component
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,7 +23,7 @@ export const metadata = {
       me: ["admin@theomegaproject.cc"],
     },
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -36,6 +37,17 @@ export default function RootLayout({
         {/* These are fallback verification tags for older crawlers */}
         <meta name="google-site-verification" content="Ufjsnr2d1f26tHU7TyfcYJp80pgR3RBjqUUCDiPEYn4" />
         <meta name="msvalidate.01" content="0D933C8A8D6D92AC7CECDB6E21259A4F" />
+        
+        {/* Microsoft Clarity Script */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "s8w40meegt");
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
